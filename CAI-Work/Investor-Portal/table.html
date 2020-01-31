@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	
+	<table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Investor Name</th>
+                            <th>Address</th>
+                            <th>Email Id</th>
+                            
+                            <th>Amount Invested</th>
+                            <th>Date Invested</th>
+                            <th>Documents</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                                <tr>
+                                    <td>Devesh Sharma</td>
+                                    <td>S-1 Plot No 102, Vaishali</td>
+                                    <td>MyMail@yahoo.co.in</td>
+                                    
+                                    <td>0</td>
+                                    <td></td>
+                                    <td>
+                                        <button type="button" class="btn viewBtn" data-btn-for="View" data-toggle="modal" data-target="#Dialog_1">View</button>
+
+                                        <div class="modal" id="Dialog_1">
+                                            <div class="modal-dialog modal-lg">
+                                                <div class="modal-content">
+
+                                                    <!-- Modal Header -->
+                                                    <div class="modal-header">
+                                                        <h4 class="modal-title"><label>Devesh Sharma</label></h4>
+                                                        <span id="messageBox_1"></span>
+                                                        <button type="button" class="close closeUpload" data-dismiss="modal">×</button>
+                                                    </div>
+
+                                                    <!-- Modal body -->
+                                                    <div class="modal-body">
+
+                                                        <div class="table-responsive">
+                                                            <table class="table table-bordered">
+
+                                                                <tbody><tr>
+                                                                        <th style="text-align:center">Shareholder Agreement</th>
+                                                                        <th style="text-align:center">Subscription Agreement</th>
+                                                                        <th style="text-align:center">SEIS Certificates</th>
+                                                                        <th style="text-align:center">Share Certificates</th>
+                                                                        <th style="text-align:center">EIS Certificates</th>
+                                                                        <th style="text-align:center">Deed of Adherence</th>
+                                                                </tr>
+                                                                <tr>
+
+                                                                        <td style="text-align:center"><a href="/Uploads\Investors\3c49bef1-20f4-444d-ad0d-906540147498_EIS_Certificates#2020.pdf" type="button" class="btn downloadBtn" download="">Download</a></td>
+                                                                        <td style="text-align:center"><input type="button" value="Upload" data-counter="1" data-holder="Uploadbtn_Subscription Agreement" id="upload_117" data-doctype="117" data-investorid="06112cfd-3624-4502-82d8-a9f0f7154f76" class="btn downloadBtn"></td>
+                                                                        <td style="text-align:center"><input type="button" value="Upload" data-counter="1" data-holder="Uploadbtn_SEIS Certificates" id="upload_118" data-doctype="118" data-investorid="06112cfd-3624-4502-82d8-a9f0f7154f76" class="btn downloadBtn"></td>
+                                                                        <td style="text-align:center"><input type="button" value="Upload" data-counter="1" data-holder="Uploadbtn_Share Certificates" id="upload_119" data-doctype="119" data-investorid="06112cfd-3624-4502-82d8-a9f0f7154f76" class="btn downloadBtn"></td>
+                                                                        <td style="text-align:center"><input type="button" value="Upload" data-counter="1" data-holder="Uploadbtn_EIS Certificates" id="upload_302" data-doctype="302" data-investorid="06112cfd-3624-4502-82d8-a9f0f7154f76" class="btn downloadBtn"></td>
+                                                                        <td style="text-align:center"><input type="button" value="Upload" data-counter="1" data-holder="Uploadbtn_Deed of Adherence" id="upload_303" data-doctype="303" data-investorid="06112cfd-3624-4502-82d8-a9f0f7154f76" class="btn downloadBtn"></td>
+
+                                                                </tr>
+                                                            </tbody></table>
+                                                        </div>
+
+
+                                                        <div id="dropArea">
+                                                            <input type="file" class="custom-file-input" id="documntFileUploader" style="display:none">
+
+                                                        </div>
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><a href="/Home/DeleteInvestorUser/06112cfd-3624-4502-82d8-a9f0f7154f76"><img src="/images/delete.svg" width="30" height="30" class="delete"></a></td>
+                                </tr>
+                        </tbody>
+
+                </table>
+</body>
+</html>

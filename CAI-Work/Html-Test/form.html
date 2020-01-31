@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Prebuilt Layout</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.3.1.css" rel="stylesheet">
+	  <link href="css/style.css" rel="stylesheet">
+	   
+<script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap-4.3.1.js"></script>
+
+  </head>
+  <body>
+    
+
+   <div class="container">
+                <div class="row">
+                    <div class="col-lg-9 col-md-9">
+                                        <div class="formRow">
+                                            <div class="formRow--item">
+                                                <label for="firstname" class="formRow--input-wrapper js-inputWrapper">
+                                                    <input type="email" class="formRow--input js-input" id="Email" placeholder="Email">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="formRow">
+                                            <div class="formRow--item">
+                                                <label for="firstname" class="formRow--input-wrapper js-inputWrapper">
+                                                    <input type="password" class="formRow--input js-input" id="Password" placeholder="Password">
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                    
+                </div>
+            </div>
+	  
+	  <script>
+            var $inputItem = $(".js-inputWrapper");
+            $inputItem.length && $inputItem.each(function() {
+                var $this = $(this),
+                $input = $this.find(".formRow--input"),
+                placeholderTxt = $input.attr("placeholder"),
+                $placeholder;
+            
+                $input.after('<span class="placeholder">' + placeholderTxt + "</span>"),
+                $input.attr("placeholder", ""),
+                $placeholder = $this.find(".placeholder"),
+            
+                $input.val().length ? $this.addClass("active") : $this.removeClass("active"),
+            
+                $input.on("focusout", function() {
+                    $input.val().length ? $this.addClass("active") : $this.removeClass("active");
+                }).on("focus", function() {
+                    $this.addClass("active");
+                });
+            });
+        </script>
+	  
+	  
+	  
+   
+  </body>
+</html>
